@@ -1,0 +1,101 @@
+:root{
+    --main-black:black;
+    --value-color:rgba(190, 99, 25, 0.468);
+    --btn-color-500: #87635a;
+    --h3-color:#260f08;
+    --value-color:#c73b0f;
+}
+
+body{
+    font-family: "Red Hat Text", sans-serif;
+}
+/* ////////utility/////////// */
+.d-flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.gap{
+    gap:8px;
+}
+
+/* container//////////////// */
+.container{
+    max-width:1050px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/* section///////////// */
+
+section h2{
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Red Hat Text", sans-serif;
+    padding:50px 0px 15px 0px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+li{
+    width: 250px;
+}
+
+.card-img{
+    position: relative;
+    margin-bottom: 38px;
+}
+.card-img:hover{
+    padding:2px;
+    border-radius: 5px;
+    background-color: var(--value-color);
+}
+
+.waffle-img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    transform: translate(-50%, 50%);
+    width: 160px;
+    padding: 12px 0px;
+    background-color: #fff;
+    border: 1px solid var(--btn-color-500);
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:var(--value-color);
+}
+.btn:hover img{
+    filter: brightness(0) invert(1);
+}
+
+.card-category{
+    font-size:12px;
+    color: var(--btn-color-500);
+}
+
+.card-name{
+    margin: 5px 0px;
+    font-weight:600;
+    color:var(--h3-color);
+}
+
+.card-value{
+    font-size: 16px;
+    font-weight:600;
+    color:var(--value-color);
+}
